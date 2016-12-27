@@ -9,6 +9,45 @@ cobudget's backend api. for more information on the project as a whole, check ou
 
 ---
 
+## Vagrant based development
+
+For the previous installation instructions, see below.
+
+### Preconditions
+* Install [Vagrant](https://www.vagrantup.com)
+* Install [VirtualBox](https://www.virtualbox.org)
+
+### Install
+
+First, clone the repo from git. Then
+
+```
+cd cobudget-api
+vagrant up
+cd /vagrant
+bundle install
+```
+
+### Configure
+
+`cp config/database.example.yml config/database.yml`
+
+edit `config/database.yml`.
+
+### Setup database
+
+```
+bundle exec rake db:setup`
+```
+
+### Run tests
+
+```
+bundle exec rspec
+```
+
+## Previous instructions
+
 ### install
 
 ```
