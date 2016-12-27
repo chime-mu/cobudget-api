@@ -24,6 +24,7 @@ First, clone the repo from git. Then
 ```
 cd cobudget-api
 vagrant up
+vagrant ssh
 cd /vagrant
 bundle install
 ```
